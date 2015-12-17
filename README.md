@@ -102,7 +102,6 @@ Use with stack
 ```
 $ stack exec -- haddocset create
 $ stack build --haddock
-$ stack exec -- haddocset add $HOME/.stack/snapshots/x86_64-osx/lts-3.2/7.10.2/pkgdb/*.conf
+$ stack exec -- haddocset add  $(stack path --local-pkg-db)/*.conf 
 ```
-
 Thanks: [@mohanzhang - jfeltz/dash-haskell#14](../../../../jfeltz/dash-haskell/issues/14#issuecomment-139656811)
